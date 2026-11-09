@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "309584466871",
+    "project_id": "dariimmo-app-6b7ec",
+    "storage_bucket": "dariimmo-app-6b7ec.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309584466871:android:6389765fffa9798ee9ce32",
+        "android_client_info": {
+          "package_name": "com.dariimmo.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpfp8l-jlSX7gGS70-ItFqcm0Fs5Y8bMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
