@@ -10,31 +10,62 @@ L'application est développée avec **Flutter** et utilise **Firebase** pour l'a
 
 ### Captures d'écran
 
-| Accueil | Favoris |
-|:---:|:---:|
-| ![Accueil](docs/screenshots/01-accueil.png) | ![Favoris](docs/screenshots/02-favoris.png) |
+<h2>📱 Captures d'écran</h2>
 
-| Publier une annonce - Partie 1 | Publier une annonce - Partie 2 |
-|:---:|:---:|
-| ![Publier partie 1](docs/screenshots/03-publier-partie-1.png) | ![Publier partie 2](docs/screenshots/04-publier-partie-2.png) |
-
-| Messages | Profil |
-|:---:|:---:|
-| ![Messages](docs/screenshots/05-messages.png) | ![Profil](docs/screenshots/06-profil.png) |
-
-| Mes annonces | Paramètres |
-|:---:|:---:|
-| ![Mes annonces](docs/screenshots/07-mes-annonces.png) | ![Paramètres](docs/screenshots/08-parametres.png) |
-
-| Profil invité | Connexion |
-|:---:|:---:|
-| ![Profil invité](docs/screenshots/09-profile-invite.png) | ![Connexion](docs/screenshots/10-connexion.png) |
-
-| Inscription |
-|:---:|
-| ![Inscription](docs/screenshots/11-inscription.png) |
-
----
+<table>
+  <tr>
+    <td align="center">
+      <img src="docs/screenshots/01-accueil.png" width="180">
+      <br>Accueil
+    </td>
+    <td align="center">
+      <img src="docs/screenshots/02-favoris.png" width="180">
+      <br>Favoris
+    </td>
+    <td align="center">
+      <img src="docs/screenshots/03-publier-partie-1.png" width="180">
+      <br>Publication 1
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="docs/screenshots/04-publier-partie-2.png" width="180">
+      <br>Publication 2
+    </td>
+    <td align="center">
+      <img src="docs/screenshots/05-messages.png" width="180">
+      <br>Messages
+    </td>
+    <td align="center">
+      <img src="docs/screenshots/06-profil.png" width="180">
+      <br>Profil
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="docs/screenshots/07-mes-annonces.png" width="180">
+      <br>Mes annonces
+    </td>
+    <td align="center">
+      <img src="docs/screenshots/08-parametres.png" width="180">
+      <br>Paramètres
+    </td>
+    <td align="center">
+      <img src="docs/screenshots/09-profile-invite.png" width="180">
+      <br>Profil invité
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="docs/screenshots/10-connexion.png" width="180">
+      <br>Connexion
+    </td>
+    <td align="center">
+      <img src="docs/screenshots/11-inscription.png" width="180">
+      <br>Inscription
+    </td>
+  </tr>
+</table>
 
 ## ✨ Fonctionnalités principales
 
