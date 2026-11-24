@@ -1,151 +1,250 @@
-# DariImmo
+# 🏡 DariImmo
 
-<p align="center">
-  <strong>Application mobile tunisienne de location et de vente immobilière.</strong>
-</p>
+**DariImmo** est une application mobile de gestion et de consultation d'annonces immobilières en Tunisie. Elle permet aux utilisateurs de découvrir des biens immobiliers, publier leurs propres annonces, gérer leurs favoris et communiquer avec d'autres utilisateurs.
 
-DariImmo permet de publier, rechercher, enregistrer et gérer des annonces immobilières. Les utilisateurs peuvent contacter les propriétaires via la messagerie intégrée, consulter les annonces sur une carte et gérer leur profil.
+L'application est développée avec **Flutter** et utilise **Firebase** pour l'authentification et la gestion des données.
 
-## Fonctionnalités
+---
 
-- Recherche d'annonces par ville, quartier ou mot-clé
-- Filtrage entre location et vente
-- Consultation détaillée des biens avec photos, équipements et localisation
-- Publication d'annonces avec photos et position sur la carte
-- Gestion des annonces favorites
-- Messagerie entre acheteurs, locataires et propriétaires
-- Création de compte, connexion email/mot de passe et Google
-- Gestion du profil, des paramètres et des annonces publiées
-- Interface responsive adaptée aux écrans mobiles
+## 📱 Aperçu de l'application
 
-## Captures d'écran
-
-### Accueil
+### Captures d'écran
 
 | Accueil | Favoris |
-|---|---|
+|:---:|:---:|
 | ![Accueil](docs/screenshots/01-accueil.png) | ![Favoris](docs/screenshots/02-favoris.png) |
 
-### Publication d'une annonce
-
-| Informations principales | Équipements et localisation |
-|---|---|
-| ![Publication - partie 1](docs/screenshots/03-publier-partie-1.png) | ![Publication - partie 2](docs/screenshots/04-publier-partie-2.png) |
-
-### Messagerie et compte
+| Publier une annonce - Partie 1 | Publier une annonce - Partie 2 |
+|:---:|:---:|
+| ![Publier partie 1](docs/screenshots/03-publier-partie-1.png) | ![Publier partie 2](docs/screenshots/04-publier-partie-2.png) |
 
 | Messages | Profil |
-|---|---|
+|:---:|:---:|
 | ![Messages](docs/screenshots/05-messages.png) | ![Profil](docs/screenshots/06-profil.png) |
 
 | Mes annonces | Paramètres |
-|---|---|
+|:---:|:---:|
 | ![Mes annonces](docs/screenshots/07-mes-annonces.png) | ![Paramètres](docs/screenshots/08-parametres.png) |
 
-### Authentification
-
 | Profil invité | Connexion |
-|---|---|
+|:---:|:---:|
 | ![Profil invité](docs/screenshots/09-profile-invite.png) | ![Connexion](docs/screenshots/10-connexion.png) |
 
-<p align="center">
-  <img src="docs/screenshots/11-inscription.png" alt="Inscription" width="360">
-</p>
+| Inscription |
+|:---:|
+| ![Inscription](docs/screenshots/11-inscription.png) |
 
-## Technologies
+---
 
-- **Framework :** Flutter / Dart
-- **Gestion d'état :** Flutter Riverpod
-- **Navigation :** GoRouter
-- **Backend :** Firebase Authentication et Cloud Firestore
-- **Connexion Google :** Google Sign-In
-- **Cartes :** Flutter Map, OpenStreetMap et Geolocator
-- **Images :** Image Picker, Cached Network Image et Cloudinary
+## ✨ Fonctionnalités principales
 
-## Architecture
+### 🏠 Consultation des annonces
+- Consulter les annonces immobilières disponibles.
+- Découvrir les biens immobiliers proposés.
+- Consulter les détails des annonces.
+
+### ❤️ Gestion des favoris
+- Ajouter des annonces aux favoris.
+- Consulter la liste des annonces favorites.
+
+### 📝 Publication des annonces
+- Publier une nouvelle annonce immobilière.
+- Remplir les informations du bien immobilier.
+- Ajouter des photos.
+- Organiser la publication en plusieurs étapes.
+
+### 💬 Messagerie
+- Accéder à la messagerie.
+- Consulter les conversations.
+- Communiquer avec les autres utilisateurs.
+
+### 👤 Gestion du profil
+- Créer un compte.
+- Se connecter à l'application.
+- Consulter son profil.
+- Modifier les informations personnelles.
+- Consulter et gérer ses propres annonces.
+
+### ⚙️ Paramètres
+- Accéder aux paramètres de l'application.
+- Gérer les préférences du compte.
+
+### 👀 Mode invité
+- Découvrir l'application sans créer immédiatement un compte.
+
+---
+
+## 🛠️ Technologies utilisées
+
+| Technologie | Utilisation |
+|---|---|
+| Flutter | Développement de l'application mobile |
+| Dart | Langage de programmation |
+| Firebase Authentication | Authentification des utilisateurs |
+| Cloud Firestore | Gestion et stockage des données |
+| Google Sign-In | Connexion avec un compte Google |
+| Riverpod | Gestion de l'état de l'application |
+| GoRouter | Navigation entre les écrans |
+| Flutter Map / OpenStreetMap | Affichage des cartes |
+| Geolocator | Localisation géographique |
+| Image Picker | Sélection des images |
+| Cached Network Image | Chargement et mise en cache des images |
+| Cloudinary | Gestion des images |
+
+---
+
+## 🏗️ Architecture du projet
+
+Le projet est organisé selon une architecture basée sur les fonctionnalités (*Feature-based architecture*).
 
 ```text
-lib/
-├── core/
-│   ├── constants/       # Constantes communes
-│   ├── router/          # Configuration GoRouter
-│   ├── theme/           # Thème et styles globaux
-│   └── widgets/         # Widgets partagés
-├── features/
-│   ├── auth/            # Connexion, inscription et vérification
-│   ├── chat/            # Messagerie et conversations
-│   ├── favorites/       # Gestion des favoris
-│   ├── listings/        # Recherche, détails et publication
-│   ├── map/             # Carte et sélection de localisation
-│   ├── profile/         # Profil, paramètres et annonces
-│   └── search/          # Fonctionnalités de recherche
-├── firebase_options.dart
-└── main.dart
+flutter_app/
+│
+├── android/
+├── ios/
+├── assets/
+│
+├── docs/
+│   └── screenshots/
+│       ├── 01-accueil.png
+│       ├── 02-favoris.png
+│       ├── 03-publier-partie-1.png
+│       ├── 04-publier-partie-2.png
+│       ├── 05-messages.png
+│       ├── 06-profil.png
+│       ├── 07-mes-annonces.png
+│       ├── 08-parametres.png
+│       ├── 09-profile-invite.png
+│       ├── 10-connexion.png
+│       └── 11-inscription.png
+│
+├── lib/
+│   ├── features/
+│   │   ├── auth/
+│   │   ├── home/
+│   │   ├── favorites/
+│   │   ├── profile/
+│   │   ├── chat/
+│   │   └── ...
+│   │
+│   ├── main.dart
+│   └── firebase_options.dart
+│
+├── pubspec.yaml
+└── README.md
 ```
 
-## Prérequis
+---
 
-- Flutter SDK 3.13 ou supérieur
-- Dart SDK 3.13 ou supérieur
-- Android Studio ou VS Code
-- Un projet Firebase configuré
-- Un émulateur ou un appareil Android/iOS
+## ⚙️ Installation et configuration
 
-## Installation
+### 1. Prérequis
 
-1. Cloner le projet :
+Avant de commencer, assurez-vous d'avoir installé :
+
+- [Flutter SDK](https://docs.flutter.dev/get-started/install)
+- [Dart SDK](https://dart.dev/get-dart)
+- [Android Studio](https://developer.android.com/studio) ou [Xcode](https://developer.apple.com/xcode/) pour exécuter l'application.
+- [Git](https://git-scm.com/)
+
+### 2. Cloner le projet
 
 ```bash
-git clone <url-du-depot>
-cd flutter_app
+git clone <URL_DU_DEPOT>
 ```
 
-2. Installer les dépendances :
+Accéder au dossier du projet :
+
+```bash
+cd <NOM_DU_DOSSIER>
+```
+
+### 3. Installer les dépendances
 
 ```bash
 flutter pub get
 ```
 
-3. Configurer Firebase pour les plateformes utilisées :
+### 4. Configuration Firebase
 
-```bash
-flutterfire configure
+L'application utilise Firebase pour l'authentification et le stockage des données.
+
+Pour configurer Firebase :
+
+1. Créer un projet sur [Firebase Console](https://console.firebase.google.com/).
+2. Ajouter les applications Android et iOS au projet Firebase.
+3. Configurer Firebase Authentication.
+4. Activer Cloud Firestore.
+5. Générer le fichier `firebase_options.dart` avec FlutterFire CLI si nécessaire.
+6. Ajouter les fichiers de configuration Firebase correspondant aux plateformes.
+
+Pour iOS, le fichier `GoogleService-Info.plist` doit être placé dans :
+
+```text
+ios/Runner/GoogleService-Info.plist
 ```
 
-4. Vérifier l'installation :
+Pour Android, le fichier `google-services.json` doit être placé dans :
 
-```bash
-flutter doctor
+```text
+android/app/google-services.json
 ```
 
-5. Lancer l'application :
+### 5. Lancer l'application
+
+Vérifier les appareils disponibles :
+
+```bash
+flutter devices
+```
+
+Lancer l'application :
 
 ```bash
 flutter run
 ```
 
-## Configuration requise
-
-Le projet utilise les services Firebase suivants :
-
-- Firebase Authentication
-- Cloud Firestore
-- Google Sign-In
-
-Pour Android, ajoutez le fichier `google-services.json` dans `android/app/`.  
-Pour iOS, ajoutez le fichier `GoogleService-Info.plist` dans `ios/Runner/`.
-
-Ne publiez jamais les clés privées, fichiers de configuration sensibles ou identifiants Cloudinary dans un dépôt public.
-
-## Analyse et tests
+Pour générer une version iOS Release :
 
 ```bash
-flutter analyze
-flutter test
+flutter build ios --release
 ```
 
-## Informations du projet
+---
 
-- **Nom :** DariImmo
-- **Version :** 1.0.0
-- **Plateformes :** Android, iOS, macOS, Web
+## 🔐 Sécurité
+
+- L'authentification des utilisateurs est gérée par Firebase Authentication.
+- Les accès aux données doivent être protégés par les règles de sécurité Firestore.
+- Les clés privées et les identifiants sensibles ne doivent pas être publiés dans un dépôt GitHub public.
+
+---
+
+## 📂 Structure des fonctionnalités
+
+| Module | Description |
+|---|---|
+| Authentication | Inscription et connexion |
+| Home | Accueil et consultation des annonces |
+| Favorites | Gestion des annonces favorites |
+| Profile | Profil utilisateur et paramètres |
+| Chat | Messagerie entre utilisateurs |
+| Publication | Création et gestion des annonces |
+
+---
+
+## 👩‍💻 Informations sur le projet
+
+**Nom du projet :** DariImmo  
+**Type :** Application mobile immobilière  
+**Domaine :** Immobilier  
+**Framework :** Flutter  
+**Langage :** Dart  
+**Backend :** Firebase  
+
+---
+
+## 🚀 Objectif du projet
+
+DariImmo a pour objectif de faciliter la recherche et la publication de biens immobiliers en Tunisie à travers une application mobile simple, moderne et intuitive.
+
